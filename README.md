@@ -13,6 +13,10 @@ open cmd in project root dir and type following commands:
 
 Binary files for running both app and unit tests are in bin directory
 
-## config file
+### config file
 
 in zsiutconfig.xml you can change values to custom ones
+
+### output
+
+App writes binary data with message to file "Name.bin" 
