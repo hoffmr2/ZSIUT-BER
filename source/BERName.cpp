@@ -77,7 +77,6 @@ void BERName::loadData(string a_ConfigPath) {
 
 
     string xmlFileContext = file2char( a_ConfigPath );
-    std::cout << a_ConfigPath << std::endl;
 
     try
     {
@@ -85,7 +84,6 @@ void BERName::loadData(string a_ConfigPath) {
     }
     catch( const parse_error & e )
     {
-        std:: cout << 1 << std::endl;
         std::cerr << e.what() << " here: " << e.where < char >() << std::endl;
     }
 
@@ -113,12 +111,10 @@ void BERName::loadData(string a_ConfigPath) {
         structF5.push_back(std::stof(value->value()));
     }
     std::vector<char> structF6;
-    std:: cout << 1 << std::endl;
     for( xml_node <>* value = structNode->first_node("f6")->first_node(); value; value = value->next_sibling() ) {
 
         structF6.push_back(std::stoi(value->value()));
     }
-    std:: cout << 2 << std::endl;
     m_Details = make_shared<BERDetails>(structName,
                                         structF2,
                                         structF3,

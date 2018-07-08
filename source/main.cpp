@@ -5,7 +5,8 @@ using std::string;
 
 int main() {
     std::cout << "ZSiUT 2018 BER ENCODER" << std::endl;
-    string xmlPath = "C:\\Users\\MHofffmann\\Documents\\Repos\\ZSiUT\\zsiutconfig.xml";
+    std::cout << "Marcin Hoffmann" << std::endl;
+    string xmlPath = "../zsiutconfig.xml";
     string output = "Name.bin";
 
     BERName berName(xmlPath);
