@@ -22,7 +22,7 @@ std::vector<Byte> BERString::Char2Bytes(const char *a_Value) {
     return output;
 }
 
-BERString::BERString(const char *a_Value) : BER(m_TypeTag) {
+BERString::BERString(const char *a_Value, const Byte a_TypeTag) : BER(a_TypeTag) {
 
     m_Value = Char2Bytes(a_Value);
     EncodeLength();

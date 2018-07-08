@@ -10,7 +10,7 @@
 class BERString : public BER {
 
 public:
-    BERString(const char* a_Value);
+    BERString(const char *a_Value, const Byte a_TypeTag = 0x04);
 
 private:
     static const Byte m_TypeTag = 0x04;

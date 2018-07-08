@@ -16,7 +16,7 @@ struct BERStringTest : public ::testing::Test {
 
     BERStringTest() {
 
-        m_BER = std::make_shared<BERString>(BERString(value));
+        m_BER = std::make_shared<BERString>(BERString(value, 0));
 
     }
 };

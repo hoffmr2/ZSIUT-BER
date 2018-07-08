@@ -13,7 +13,7 @@ using std::unique_ptr;
 using std::runtime_error;
 using std::string;
 using std::make_shared;
-BERName::BERName(string a_ConfigPath) : BER(m_Type), m_ConfigXml() {
+BERName::BERName(string a_ConfigPath) : BER(m_TypeTag ), m_ConfigXml() {
 
 
 }
@@ -90,9 +90,9 @@ void BERName::loadData(string a_ConfigPath) {
     }
 
     m_NameNode = m_ConfigXml.first_node();
-    m_FN = make_shared<BERString>(m_NameNode->first_node("fn")->value());
-    m_SN = make_shared<BERString>(m_NameNode->first_node("sn")->value());
-    m_AD = make_shared<BERString>(m_NameNode->first_node("ad")->value());
+    m_FN = make_shared<BERString>(m_NameNode->first_node("fn")->value(), 0x68); // application depend tag 8
+    m_SN = make_shared<BERString>(m_NameNode->first_node("sn")->value(), 0x69); // application depend tag 9
+    m_AD = make_shared<BERString>(m_NameNode->first_node("ad")->value(), 0x6a); // application depend tag 10
     auto age = std::stoi(m_NameNode->first_node("age")->value());
     m_AGE = make_shared<BERInteger>(age);
 
