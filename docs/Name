@@ -1,0 +1,28 @@
+
+ZSIUT DEFINITIONS ::= 
+BEGIN
+{
+
+	OrdLev ::= SEQUENCE OF REAL
+
+	Details ::= SEQUENCE
+	{
+		Name ::= OCTET STRING (20)
+		F2   ::= OCTET STRING (30)
+		F3   ::= INTEGER (0..50)
+		F4   ::= OrdLev
+		F5   ::= OrdLev
+		F6   ::= BIT STRING
+	}
+
+	Name ::= SEQUENCE
+	{
+		FN     ::= OCTET STRING [8]
+		SN     ::= OCTET STRING [9]
+		AD     ::= OCTET STRING [10]
+		AGE    ::= INTEGER
+		STRUCT ::= Details
+		ARRAY  ::= OrdLev
+ 	}
+}
+END

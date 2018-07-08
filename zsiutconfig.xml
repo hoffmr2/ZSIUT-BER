@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<name id="0">
+    <fn>00000000</fn>
+    <sn>000000000</sn>
+    <ad>00000000000</ad>
+    <age>44</age>
+    <struct>
+        <name id="1">00000000000000000000</name>
+        <f2>000000000000000000000000000000</f2>
+        <f3>44</f3>
+        <f4>
+            <value id="0">0</value>
+            <value id="1">0</value>
+            <value id="2">0</value>
+        </f4>
+        <f5>
+            <value id="0">0</value>
+            <value id="1">0</value>
+            <value id="2">0</value>
+        </f5>
+        <f6>
+            <bit id="0">0</bit>
+            <bit id="1">0</bit>
+            <bit id="2">0</bit>
+            <bit id="3">0</bit>
+            <bit id="4">0</bit>
+            <bit id="5">0</bit>
+        </f6>
+    </struct>
+    <array>
+        <value id="0">0</value>
+        <value id="1">0</value>
+        <value id="2">0</value>
+        <value id="3">0</value>
+        <value id="4">0</value>
+    </array>
+</name>
